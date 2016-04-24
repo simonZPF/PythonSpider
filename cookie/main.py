@@ -1,0 +1,6 @@
+# -*- coding:utf-8 -*-
+import requests
+cook={"Cookie":" pgv_pvid=184944698; pt2gguin=o0316829772; ptcz=326074fa6b9a84317a78984dcf730611b4ed69cd539c63776e50cd681fdf6181; ptui_loginuin=316829772; o_cookie=316829772; ptisp=ctc; uin=o0316829772; skey=@wVrFE1vOD; qm_username=316829772; qm_sid=d259774192d92c2aa707713dab2d0d28,qOTlHU0pzeFJnRUQ4ODNLZTVRRFZvcWpveXlLa3NGMmNiT1lpbWFEVDJHNF8.; CCSHOW=000001; edition=mail.qq.com; wimrefreshrun=0&; qm_antisky=316829772&359a374ae34a11e67f21ee63363776b9cdde7f266580fe2839870cbcf239e5b4; qm_flag=0; qqmail_alias=316829772@qq.com; new_mail_num=316829772&15; qm_domain=http://mail.qq.com; qm_ptsk=316829772&@wVrFE1vOD; foxacc=316829772&0; mcookie=0&y; p_uin=o0316829772; p_skey=99GSJsxRgED883Ke5QDVoqjoyyKksF2cbOYimaDT2G4_; pt4_token=Zr8wqdtpFCmmrJpwybXh2wpNIqpNOR*a5HL6pzP5*2k_; sid=316829772&d259774192d92c2aa707713dab2d0d28,qOTlHU0pzeFJnRUQ4ODNLZTVRRFZvcWpveXlLa3NGMmNiT1lpbWFEVDJHNF8.; ssl_edition=mail.qq.com; username=316829772&316829772"}
+url="http://mail.qq.com/cgi-bin/frame_html?sid=2ZUCF2cp9BbVPS95&r=c566eda5a8c256869b0153a0b56fd6ec"
+html=requests.get(url,cookies=cook)
+print html.text
