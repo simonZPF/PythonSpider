@@ -11,8 +11,9 @@ head={"User-Agent":
           "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.11815.13 Safari/537.36"}
 jscontent=requests.get(url,headers=head).content
 contents = re.findall(r'<p id=\\\"\w*\\\">(.*?)<br \\/>',jscontent)
-for content in  contents:
-    print content.decode("unicode_escape")
+print jscontent
+# for content in contents:
+#       print content.decode("unicode_escape")
 # jsData = jsDict['data']
 # comments = jsData["commentid"]
 # for each in comments:
